@@ -1,0 +1,26 @@
+{
+  "name": "ingredient_research",
+  "description": "Deep research for supplement/product ingredient evidence — gathers studies, claims, citations, and DR-relevant proof points for the R in RMBC.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "product_name": {
+        "type": "string",
+        "description": "Product or brand name."
+      },
+      "ingredients": {
+        "type": "string",
+        "description": "List of ingredients to research (comma-separated or bulleted)."
+      },
+      "claims": {
+        "type": "string",
+        "description": "Specific marketing claims to validate or find evidence for."
+      },
+      "product_category": {
+        "type": "string",
+        "description": "One of: supplement (default), skincare, food, other."
+      }
+    },
+    "required": ["product_name", "ingredients"]
+  }
+}

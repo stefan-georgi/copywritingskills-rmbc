@@ -1,0 +1,7 @@
+{
+  "name": "rmbc-skills",
+  "description": "Stefan Georgi's RMBC methodology as executable agent skills for direct response copywriting",
+  "version": "1.0.0",
+  "author": { "name": "Stefan Georgi", "url": "https://copyaccelerator.com" },
+  "skills_path": "../skills"
+}

@@ -1,0 +1,47 @@
+{
+  "ad": "ad-5-one-fix-away",
+  "output_1": {
+    "triage_clarity": 9,
+    "specificity": 9,
+    "completeness": 9,
+    "calibration": 8,
+    "prioritization": 9,
+    "actionability": 9,
+    "total": 53,
+    "strengths": [
+      "Escalation gate callout immediately tells the copywriter to fix CTA/offer before touching anything else",
+      "Severity labels (Rewrite/Major Fix/Minor Fix) on every finding create instant visual triage",
+      "Five distinct findings cover both critical and minor RMBC gaps — nothing significant missed",
+      "Concrete rewrite examples for every finding (e.g., specific CTA wording, '47-page playbook + 3 templates')",
+      "Tone mismatch identified as a separate Major Fix — correctly separated from the CTA/offer problems"
+    ],
+    "weaknesses": [
+      "Score of 74 sits at the very top edge of the expected 65-75 band — could arguably be 1-2 points lower given how catastrophic the CTA breakdown is",
+      "Minor Fix on Research (implicit competitor landscape) is somewhat reach-y — the ad's Research is genuinely strong and this nitpick adds little value"
+    ]
+  },
+  "output_2": {
+    "triage_clarity": 6,
+    "specificity": 8,
+    "completeness": 7,
+    "calibration": 9,
+    "prioritization": 7,
+    "actionability": 7,
+    "total": 44,
+    "strengths": [
+      "Score of 72 is dead-center in the expected 65-75 band — excellent calibration",
+      "CTA rewrite example is concrete and immediately usable",
+      "Correctly identifies the first-person-plural tone shift ('We look forward') vs. first-person singular throughout the body",
+      "Concise format — a busy copywriter could read this in under 2 minutes"
+    ],
+    "weaknesses": [
+      "No escalation gate or severity labels — reader must scan to the recommendations to understand what matters most",
+      "Only 3 findings total — misses the mechanism abstraction gap and potential research sharpening opportunities",
+      "Offer recommendation asks the right questions but provides less concrete example answers than Output 1",
+      "No findings section separate from recommendations — conflates diagnosis with prescription",
+      "Dimension table uses prose 'Assessment' column instead of severity labels, reducing scanability"
+    ]
+  },
+  "winner": "Output 1",
+  "reasoning": "Output 1 wins by a significant margin (53 vs 44). Its key advantages are structural: the escalation gate immediately tells a copywriter where to focus, severity labels on every finding create instant visual triage, and the separate Findings + Recommendations sections allow the reader to understand both the diagnosis and the prescription. Output 1 also identifies 5 findings vs Output 2's 3, catching the minor Mechanism abstraction gap and Research sharpening opportunity. Both outputs nail the core diagnosis (broken CTA, missing offer, tone mismatch) and both provide concrete rewrite examples, but Output 1 is more granular and more actionable at every level. Output 2's main advantage is tighter calibration (72 vs 74) and brevity, but in a copy audit context, the additional structure and completeness of Output 1 is more valuable than conciseness."
+}

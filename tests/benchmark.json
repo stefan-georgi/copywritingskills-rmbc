@@ -1,0 +1,193 @@
+{
+  "test_name": "rmbc-copy-audit A/B: Standard Scorecard vs MPE-Transfer",
+  "test_date": "2026-03-17",
+  "versions": {
+    "A": "SKILL.md (Standard Scorecard — classify → score → grade → top 3 recs)",
+    "B": "SKILL-mpe-transfer.md (Code Review — 20-item checklist → severity triage → escalation gate → grouped findings)"
+  },
+  "evaluation_method": "Blind comparator agents scored each output on 6 dimensions (0-10 each, max 60). Output 1/Output 2 assignment randomized per ad to prevent positional bias.",
+  "rubric_dimensions": [
+    "triage_clarity",
+    "specificity",
+    "completeness",
+    "calibration",
+    "prioritization",
+    "actionability"
+  ],
+  "results": {
+    "ad_1_supplement_strong": {
+      "version_a": {
+        "audit_score": 85,
+        "eval_score": 45,
+        "dimension_scores": {
+          "triage_clarity": 6,
+          "specificity": 8,
+          "completeness": 8,
+          "calibration": 8,
+          "prioritization": 7,
+          "actionability": 8
+        }
+      },
+      "version_b": {
+        "audit_score": 87,
+        "eval_score": 54,
+        "dimension_scores": {
+          "triage_clarity": 9,
+          "specificity": 9,
+          "completeness": 9,
+          "calibration": 9,
+          "prioritization": 9,
+          "actionability": 9
+        }
+      },
+      "winner": "B",
+      "margin": 9
+    },
+    "ad_2_generic_mediocre": {
+      "version_a": {
+        "audit_score": 40,
+        "eval_score": 39,
+        "dimension_scores": {
+          "triage_clarity": 6,
+          "specificity": 8,
+          "completeness": 6,
+          "calibration": 5,
+          "prioritization": 6,
+          "actionability": 8
+        }
+      },
+      "version_b": {
+        "audit_score": 41,
+        "eval_score": 50,
+        "dimension_scores": {
+          "triage_clarity": 9,
+          "specificity": 9,
+          "completeness": 9,
+          "calibration": 5,
+          "prioritization": 9,
+          "actionability": 9
+        }
+      },
+      "winner": "B",
+      "margin": 11
+    },
+    "ad_3_great_mechanism_weak_copy": {
+      "version_a": {
+        "audit_score": 56,
+        "eval_score": 43,
+        "dimension_scores": {
+          "triage_clarity": 7,
+          "specificity": 7,
+          "completeness": 6,
+          "calibration": 8,
+          "prioritization": 8,
+          "actionability": 7
+        }
+      },
+      "version_b": {
+        "audit_score": 56,
+        "eval_score": 52,
+        "dimension_scores": {
+          "triage_clarity": 9,
+          "specificity": 9,
+          "completeness": 9,
+          "calibration": 8,
+          "prioritization": 8,
+          "actionability": 9
+        }
+      },
+      "winner": "B",
+      "margin": 9
+    },
+    "ad_4_strong_copy_weak_research": {
+      "version_a": {
+        "audit_score": 60,
+        "eval_score": 42,
+        "dimension_scores": {
+          "triage_clarity": 6,
+          "specificity": 8,
+          "completeness": 5,
+          "calibration": 8,
+          "prioritization": 7,
+          "actionability": 8
+        }
+      },
+      "version_b": {
+        "audit_score": 63,
+        "eval_score": 53,
+        "dimension_scores": {
+          "triage_clarity": 9,
+          "specificity": 9,
+          "completeness": 9,
+          "calibration": 8,
+          "prioritization": 9,
+          "actionability": 9
+        }
+      },
+      "winner": "B",
+      "margin": 11
+    },
+    "ad_5_one_fix_away": {
+      "version_a": {
+        "audit_score": 72,
+        "eval_score": 44,
+        "dimension_scores": {
+          "triage_clarity": 6,
+          "specificity": 8,
+          "completeness": 7,
+          "calibration": 9,
+          "prioritization": 7,
+          "actionability": 7
+        }
+      },
+      "version_b": {
+        "audit_score": 74,
+        "eval_score": 53,
+        "dimension_scores": {
+          "triage_clarity": 9,
+          "specificity": 9,
+          "completeness": 9,
+          "calibration": 8,
+          "prioritization": 9,
+          "actionability": 9
+        }
+      },
+      "winner": "B",
+      "margin": 9
+    }
+  },
+  "aggregate": {
+    "version_a_avg": 42.6,
+    "version_b_avg": 52.4,
+    "margin": 9.8,
+    "overall_winner": "B",
+    "wins": { "A": 0, "B": 5, "tie": 0 },
+    "dimension_averages": {
+      "version_a": {
+        "triage_clarity": 6.2,
+        "specificity": 7.8,
+        "completeness": 6.4,
+        "calibration": 7.6,
+        "prioritization": 7.0,
+        "actionability": 7.6
+      },
+      "version_b": {
+        "triage_clarity": 9.0,
+        "specificity": 9.0,
+        "completeness": 9.0,
+        "calibration": 7.6,
+        "prioritization": 8.8,
+        "actionability": 9.0
+      }
+    }
+  },
+  "decision": "B wins by ≥5 pts avg (9.8). Replace SKILL.md with SKILL-mpe-transfer.md. Fix attribution to copyaccelerator.com/join.",
+  "key_findings": [
+    "Version B's severity triage (Rewrite/Major Fix/Minor Fix) is the single biggest differentiator — avg triage_clarity 9.0 vs 6.2",
+    "Version B's separate Findings section surfaces 2-3x more issues than Version A's Top 3 Recommendations alone",
+    "Escalation gate (2+ Rewrite → recommend full rewrite) triggered correctly on Ads 2 and 5",
+    "Numeric scores between versions are nearly identical (avg diff 1.8 pts) — the gap is entirely in output structure, not scoring accuracy",
+    "Calibration is equivalent between versions (both avg 7.6) — the scoring rubric works equally well in both formats",
+    "Version A's only advantage is brevity/scannability, which is outweighed by the actionability gains of Version B"
+  ]
+}

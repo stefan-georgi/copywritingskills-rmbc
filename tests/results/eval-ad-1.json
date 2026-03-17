@@ -1,0 +1,48 @@
+{
+  "ad": "ad-1-supplement-strong",
+  "output_1": {
+    "triage_clarity": 9,
+    "specificity": 9,
+    "completeness": 9,
+    "calibration": 9,
+    "prioritization": 9,
+    "actionability": 9,
+    "total": 54,
+    "strengths": [
+      "Severity summary at the top (0 Rewrite / 0 Major Fix / 4 Minor Fix) gives instant triage — a copywriter knows within seconds this is polish work, not a rewrite",
+      "Every finding quotes exact copy and provides a specific rewrite suggestion (e.g., 'Look in the mirror and finally recognize the woman looking back' as guarantee language)",
+      "The mechanism finding explicitly maps each of the Three Phases to a specific DEJ effect (threads pulling apart, pigment pooling, losing tension) — this is the kind of concrete editorial instruction a copywriter can execute immediately",
+      "Correctly identifies the abandoned emotional arc (stranger in mirror -> Mirror Test guarantee) as the highest-priority fix, which is the single most impactful improvement for this ad",
+      "Score of 87 is precisely calibrated within the expected 80-90 band for a strong DR control"
+    ],
+    "weaknesses": [
+      "The four findings are all rated Minor Fix, which while accurate, creates a slightly flat priority landscape — a copywriter might wonder which of the four matters most before reaching the Top 3 section",
+      "The Research finding ('add one demographic specificity marker') is the least actionable of the four — it names the gap but the suggested fix ('I'm 52 and I've tried everything') is a throwaway example rather than a crafted line",
+      "Does not note the generic arrow CTA format as a visual/formatting weakness"
+    ]
+  },
+  "output_2": {
+    "triage_clarity": 6,
+    "specificity": 8,
+    "completeness": 8,
+    "calibration": 8,
+    "prioritization": 7,
+    "actionability": 8,
+    "total": 45,
+    "strengths": [
+      "Inline assessments in the dimension score table provide rich context — each dimension gets a full paragraph explaining what the copy does well and where it falls short",
+      "The Research recommendation is more specific than Output 1's, offering a concrete replacement sentence ('If you're a woman over 45 who's spent hundreds on eye creams...')",
+      "Correctly identifies the weak CTA format (arrow style) as a distinct issue and proposes a benefit-loaded button-style replacement with mechanism echo",
+      "Score of 85 is well-calibrated within the expected 80-90 band"
+    ],
+    "weaknesses": [
+      "No severity summary or triage signal at the top — a copywriter must read all three recommendations to understand the overall picture, which undermines the 'what to fix first' clarity",
+      "Missing the Findings section entirely — goes straight from dimension scores to Top 3 recommendations, which means the complete audit trail of all issues found is absent; only 3 issues surfaced vs Output 1's 4",
+      "Does not identify the missed opportunity to map each of the Three Phases back to specific DEJ effects — this is arguably the most interesting structural insight about the mechanism section and it is entirely absent",
+      "The dimension score table packs assessment text into table cells, which is harder to scan than Output 1's cleaner table + separate findings format",
+      "Prioritization is implicit (numbered list) but there is no explicit severity labeling, making it harder to gauge relative importance"
+    ]
+  },
+  "winner": "Output 1",
+  "reasoning": "Output 1 wins on triage clarity (severity summary header is immediately actionable), completeness (4 findings vs 3, including the critical phase-to-DEJ mapping insight that Output 2 misses entirely), prioritization (explicit severity labels + ranked recommendations vs implicit numbered list), and actionability (every finding includes both the diagnosis and a specific rewrite). Output 2 is competent and has slightly richer inline dimension assessments, but it lacks the structural affordances (severity summary, findings section, severity labels) that make Output 1 immediately useful to a working copywriter. The phase-to-DEJ mapping insight in Output 1 is the single most valuable editorial observation in either audit — it turns a good mechanism into an airtight one — and Output 2 does not surface it at all. Both outputs are well-calibrated (87 vs 85, both in the expected 80-90 band), but Output 1's 87 is marginally more precise for what is a strong control. Net: Output 1 scores 54/60 vs Output 2's 45/60, a 9-point gap driven primarily by triage clarity, completeness, and prioritization."
+}

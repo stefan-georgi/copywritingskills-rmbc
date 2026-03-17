@@ -1,0 +1,26 @@
+{
+  "name": "mechanism_ideation",
+  "description": "Ideate novel mechanism angles for a product claim or result — the 'M' in RMBC. Generates unique, specific explanations of WHY a product delivers its promised outcome.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "product_description": {
+        "type": "string",
+        "description": "What the product is, what it does, key ingredients/features/components."
+      },
+      "product_category": {
+        "type": "string",
+        "description": "One of: supplement, ecommerce, info_product."
+      },
+      "target_claim": {
+        "type": "string",
+        "description": "The specific result or transformation the mechanism must explain."
+      },
+      "research_context": {
+        "type": "string",
+        "description": "Prior research output (ingredient data, competitor analysis, ICP insights)."
+      }
+    },
+    "required": ["product_description", "product_category"]
+  }
+}

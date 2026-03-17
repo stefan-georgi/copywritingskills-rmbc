@@ -1,0 +1,39 @@
+{
+  "name": "webinar_registration_copy",
+  "description": "Generate RMBC-structured webinar/VSL registration page copy — short, punchy, mobile-optimized registration pages for high-ticket funnels.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "webinar_topic": {
+        "type": "string",
+        "description": "What the webinar/VSL teaches or reveals."
+      },
+      "target_audience": {
+        "type": "string",
+        "description": "Who this is for — specific ICP with pain points."
+      },
+      "key_outcome": {
+        "type": "string",
+        "description": "The primary transformation or result promised."
+      },
+      "presenter_name": {
+        "type": "string",
+        "description": "Name and brief credential of the presenter."
+      },
+      "date_time": {
+        "type": "string",
+        "description": "When the event happens (creates urgency)."
+      },
+      "traffic_source": {
+        "type": "string",
+        "description": "One of: meta, native, organic, email, affiliate. Determines pre-sell level."
+      }
+    },
+    "required": [
+      "webinar_topic",
+      "target_audience",
+      "key_outcome",
+      "presenter_name"
+    ]
+  }
+}

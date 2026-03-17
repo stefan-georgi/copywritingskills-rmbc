@@ -1,0 +1,48 @@
+{
+  "ad": "ad-4-strong-copy-weak-research",
+  "output_1": {
+    "triage_clarity": 6,
+    "specificity": 8,
+    "completeness": 5,
+    "calibration": 8,
+    "prioritization": 7,
+    "actionability": 8,
+    "total": 42,
+    "strengths": [
+      "Recommendations are highly specific with concrete rewrite examples (named ICP, named mechanism, competitive positioning line)",
+      "Correctly identifies the core RMBC imbalance: strong C, weak R and M",
+      "Overall score of 60 falls squarely in the expected 55-70 band",
+      "Each recommendation quotes the exact passage to fix and provides a replacement"
+    ],
+    "weaknesses": [
+      "Only 3 findings total — misses the single-source proof problem in C (all evidence from one anonymous narrator), the lack of urgency in the CTA, and the narrow addressable market of the agency-replacement angle",
+      "No severity labels (Rewrite/Major Fix/Minor Fix) — a copywriter cannot immediately see the triage level of each issue",
+      "B score of 18/25 feels slightly low given the clear singular angle and strong emotional throughline — but this is minor",
+      "No structure beyond the top 3 recommendations; additional issues are invisible rather than deprioritized"
+    ]
+  },
+  "output_2": {
+    "triage_clarity": 9,
+    "specificity": 9,
+    "completeness": 9,
+    "calibration": 8,
+    "prioritization": 9,
+    "actionability": 9,
+    "total": 53,
+    "strengths": [
+      "Severity summary at top (1 Rewrite, 3 Major Fix, 3 Minor Fix) gives instant triage — copywriter knows scope of work before reading details",
+      "Seven distinct findings organized by severity tier (Rewrite > Major Fix > Minor Fix) with clear descending priority",
+      "Catches issues Output 1 missed: single-source proof weakness in C, CTA lacks urgency, agency angle limits addressable market, mechanism has no name (as separate minor fix beyond the main mechanism issue)",
+      "Every finding includes a concrete rewrite example with specific language the copywriter can lift directly",
+      "Correctly flags C at 21/25 as Major Fix despite high score because single-narrator proof is structurally weak — shows nuanced calibration",
+      "Top 3 recommendations section provides a clear execution sequence separate from the full findings list"
+    ],
+    "weaknesses": [
+      "B score of 21/25 as Minor Fix is generous — the agency-replacement angle genuinely limits addressable market, and the lack of competitive positioning against other AI tools is meaningful; 18-19 might be more accurate",
+      "The R dimension gets two separate findings (ICP unspecified + pain told through narrator not reader) which slightly dilutes the Rewrite signal — could have been a single combined finding",
+      "63/100 is valid but the higher end of expectations given the research gap is truly severe (no ICP at all)"
+    ]
+  },
+  "winner": "Output 2",
+  "reasoning": "Output 2 is materially stronger across every dimension. The most significant gap is completeness: Output 2 identifies 7 distinct issues across all four RMBC dimensions while Output 1 identifies only 3, missing the single-source proof problem in Copy, the CTA urgency gap, and the narrow addressable market of the agency angle. Output 2's severity tier structure (Rewrite/Major Fix/Minor Fix) provides immediate triage clarity that Output 1 entirely lacks — a copywriter reading Output 2 knows exactly what to fix first and roughly how much work each fix requires. Both outputs score within the expected 55-70 calibration band and both provide specific, quotation-backed rewrite suggestions, but Output 2 does this for more than twice as many issues. The separation of a Findings section (complete list) from a Top 3 Recommendations section (priority execution order) gives Output 2 a structural advantage: nothing is hidden, but the path forward is still clear. Output 1 is a competent audit that nails the top 3 issues; Output 2 is a comprehensive audit that also nails the top 3 while surfacing everything else a copywriter would need."
+}

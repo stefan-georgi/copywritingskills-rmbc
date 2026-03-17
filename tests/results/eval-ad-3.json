@@ -1,0 +1,52 @@
+{
+  "ad": "ad-3-great-mechanism-weak-copy",
+  "output_1": {
+    "triage_clarity": 9,
+    "specificity": 9,
+    "completeness": 9,
+    "calibration": 8,
+    "prioritization": 8,
+    "actionability": 9,
+    "total": 52,
+    "strengths": [
+      "Severity summary (0 Rewrite / 3 Major / 3 Minor) gives instant triage at the top",
+      "Every finding quotes exact passages from the ad — 'This is really amazing stuff,' 'It's a good product and we think you'll like it,' 'There are various benefits' — and names what's wrong with each",
+      "Findings section separates Major Fix from Minor Fix with clear severity grouping, making it easy to prioritize",
+      "Actionable rewrites are highly specific — e.g., 'state what they get (30-day supply of GlucoRestore with 500mg clinically-studied MHCP), the risk reversal (guarantee), and a specific urgency driver'",
+      "Correctly identifies the two-halves problem: elite mechanism section vs. placeholder-quality close",
+      "Minor findings are genuinely minor (Metformin credibility risk, missing felt symptoms, overused 'Did you know' template) and don't distract from the major issues",
+      "Top 3 recommendations are properly ordered — Copy first (highest impact), then Brief, then Research"
+    ],
+    "weaknesses": [
+      "R score of 12/25 is arguably slightly harsh — the ad does open with a relevant reframe for blood sugar sufferers, even if it lacks ICP specificity",
+      "The recommendations section partially repeats the findings section, creating some redundancy that a busy copywriter might skim past",
+      "Could have more explicitly called out the 'two halves' structural problem as the single organizing insight at the very top before diving into dimension-by-dimension findings"
+    ]
+  },
+  "output_2": {
+    "triage_clarity": 7,
+    "specificity": 7,
+    "completeness": 6,
+    "calibration": 8,
+    "prioritization": 8,
+    "actionability": 7,
+    "total": 43,
+    "strengths": [
+      "Clean, scannable format — a busy copywriter can read the whole audit in under 2 minutes",
+      "Top 3 recommendations are in correct priority order (Copy -> Brief -> Research) and each names the exact score",
+      "Correctly identifies the core problem — mechanism section is strong, everything after it collapses",
+      "The Research recommendation offers a specific rewrite example: 'You cut the carbs, skipped dessert, and still watched your A1C climb' — this is excellent mirror language",
+      "Score of 56/100 lands within the expected 55-70 band"
+    ],
+    "weaknesses": [
+      "No severity summary — reader has to infer priority from reading the full recommendations",
+      "No separate findings section — all diagnostic detail is compressed into 3 recommendations, which means several issues are lost entirely",
+      "Missing findings that Output 1 caught: the Metformin credibility/ad-policy risk, the missing felt symptoms (fatigue, brain fog, weight gain), the overused 'Did you know' hook template",
+      "Less direct quoting of the ad's weak passages — mentions 'This is really amazing stuff' as a starting point but doesn't quote the other filler sentences individually",
+      "Dimension score table uses 'Assessment' instead of 'Severity' — a copywriter can't instantly see which dimensions need major vs. minor work",
+      "The Brief recommendation tells the copywriter to 'thread the angle into the close' but doesn't provide a concrete example of what that rewritten close would look like"
+    ]
+  },
+  "winner": "Output 1",
+  "reasoning": "Output 1 is the stronger audit across every dimension. Both outputs correctly identify the core problem (elite mechanism, collapsed copy execution) and land on the same overall score (56/100), which falls within the expected 55-70 band. But Output 1 delivers significantly more diagnostic depth: it has a severity summary for instant triage, a full findings section that separates 3 Major and 3 Minor issues (vs. Output 2's 3 recommendations only), quotes more specific passages from the ad, and provides more concrete rewrite instructions. Output 2 misses several real issues (Metformin ad-policy risk, missing felt symptoms, overused hook template) that Output 1 catches. Output 1's main weakness — some redundancy between findings and recommendations — is a minor readability issue, while Output 2's main weakness — missing findings and less specificity — means a copywriter would leave with less actionable information. A copywriter receiving Output 1 could execute a rewrite immediately; a copywriter receiving Output 2 would need to do some additional diagnosis on their own."
+}

@@ -1,0 +1,30 @@
+{
+  "name": "hook_battery",
+  "description": "Generate 10 scroll-stopping hooks across 5 psychological trigger types — the opening lines that determine whether a prospect reads or scrolls past.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "product_description": {
+        "type": "string",
+        "description": "What the product is, what it does, key features/ingredients/components."
+      },
+      "target_audience": {
+        "type": "string",
+        "description": "Who the prospect is — demographics, pain points, desires, sophistication level."
+      },
+      "key_mechanism": {
+        "type": "string",
+        "description": "The product's unique mechanism (output from mechanism-ideation)."
+      },
+      "key_result": {
+        "type": "string",
+        "description": "The specific transformation or outcome the product delivers."
+      },
+      "tone": {
+        "type": "string",
+        "description": "One of: aggressive, conversational, professional. Default: conversational."
+      }
+    },
+    "required": ["product_description", "target_audience"]
+  }
+}

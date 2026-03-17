@@ -1,0 +1,22 @@
+{
+  "name": "rmbc_copy_audit",
+  "description": "Score copy against the RMBC framework (Research, Mechanism, Brief, Copy) with per-dimension scoring, letter grades, and actionable recommendations.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "copy_text": {
+        "type": "string",
+        "description": "The copy to audit (ad, VSL script, email, landing page, etc.)."
+      },
+      "copy_type": {
+        "type": "string",
+        "description": "Format hint: ad, vsl, email, landing_page, advertorial. Default: auto-detect."
+      },
+      "context": {
+        "type": "string",
+        "description": "Target audience, product, offer details — improves Research scoring accuracy."
+      }
+    },
+    "required": ["copy_text"]
+  }
+}

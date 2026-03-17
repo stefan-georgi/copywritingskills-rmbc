@@ -1,0 +1,44 @@
+{
+  "name": "pdp_ecomm_template",
+  "description": "Generate RMBC-structured product detail page (PDP) copy for e-commerce — extracts proven structure from top-performing pages and rewrites for a new product.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "product_name": {
+        "type": "string",
+        "description": "Product name as it appears on the label/site."
+      },
+      "product_description": {
+        "type": "string",
+        "description": "What the product is, what it does, core value proposition."
+      },
+      "key_ingredients_features": {
+        "type": "string",
+        "description": "Top ingredients or features with proof points (clinical data, patents, percentages)."
+      },
+      "price_point": {
+        "type": "string",
+        "description": "Retail price + any bundle/subscription pricing."
+      },
+      "target_audience": {
+        "type": "string",
+        "description": "ICP description — demographics, psychographics, core pain."
+      },
+      "reference_page_url": {
+        "type": "string",
+        "description": "URL of a high-performing PDP to extract structure from."
+      },
+      "traffic_source": {
+        "type": "string",
+        "description": "One of: meta, native, organic, email. Default: meta. Adjusts tone/length."
+      }
+    },
+    "required": [
+      "product_name",
+      "product_description",
+      "key_ingredients_features",
+      "price_point",
+      "target_audience"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "copywritingskills-rmbc",
+  "version": "1.0.0",
+  "description": "Stefan Georgi's RMBC methodology as agent skills for high-converting direct response copywriting.",
+  "author": "Stefan Georgi",
+  "repository": "https://github.com/StefanGeorgi/copywritingskills-rmbc",
+  "skills_dir": "./skills",
+  "openai_dir": "./openai",
+  "keywords": [
+    "copywriting",
+    "rmbc",
+    "direct-response",
+    "marketing",
+    "claude-skills",
+    "agent-skills"
+  ]
+}

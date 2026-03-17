@@ -1,0 +1,34 @@
+{
+  "name": "unified_research_synthesizer",
+  "description": "Synthesize multi-source research into a single Unified Research Document — the copy-ready strategic brief that bridges Research and Brief in RMBC.",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "product_description": {
+        "type": "string",
+        "description": "What the product/service is, what it does, key claims."
+      },
+      "target_audience": {
+        "type": "string",
+        "description": "Who the copy is for — demographics, situation, buying context."
+      },
+      "ingredient_research": {
+        "type": "string",
+        "description": "Proof points, studies, clinical data, mechanism details (from ingredient-research)."
+      },
+      "competitor_data": {
+        "type": "string",
+        "description": "Competitor ads, landing pages, claims, mechanisms, pricing."
+      },
+      "customer_feedback": {
+        "type": "string",
+        "description": "Reviews, testimonials, survey responses, support tickets, coaching transcripts."
+      },
+      "market_awareness_level": {
+        "type": "string",
+        "description": "Audience awareness: unaware, problem_aware, solution_aware, product_aware, most_aware. Default: auto-detect."
+      }
+    },
+    "required": ["product_description", "target_audience"]
+  }
+}
